@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>マルチページ構成</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/jquery-mobile/jquery.mobile.min.css">
+    </head>
+    <body>
+
+        <div data-role="page" id="page1">
+
+            <div data-role="header">
+                <h1>ページ1</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+                <p>コンテンツ領域(ui-content)</p>
+                <label>
+                    氏名:
+                <input>
+                </label>
+                <input type="submit" value="送信">
+                <a href="#page2">page2</a>
+            </div><!-- /content -->
+
+            <div data-role="footer">
+                <h4>ページフッタ(footer)</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->        
+
+        <div data-role="page" id="page2">
+
+            <div data-role="header">
+                <h1>ページ2</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+                <p>コンテンツ領域(ui-content)</p>
+                <label>
+                    氏名:
+                <input>
+                </label>
+                <input type="submit" value="送信">
+                <a href="#page1">page1</a>
+            </div><!-- /content -->
+
+            <div data-role="footer">
+                <h4>ページフッタ(footer)</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->        
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/jquery-mobile/jquery.mobile.min.js"></script>
+    </body>
+</html>
